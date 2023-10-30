@@ -38,3 +38,6 @@ CREATE TABLE reservas (
     data_expiracao DATE,
     usuario INT
 )
+
+INSERT INTO usuarios (username, password) VALUES ('admin', 'admin');
+INSERT INTO usuarios (username, password) VALUES ('comum', 'comum');
