@@ -1,3 +1,5 @@
+CREATE DATABASE meubanco;
+USE meubanco;
 CREATE TABLE usuarios (
     _id INT PRIMARY KEY,
     nome VARCHAR(255),
@@ -38,3 +40,5 @@ CREATE TABLE reservas (
     data_expiracao DATE,
     usuario INT
 )
+INSERT INTO usuarios (username, password) VALUES ('admin', 'admin');
+INSERT INTO usuarios (username, password) VALUES ('comum', 'comum');
