@@ -42,5 +42,5 @@ CREATE TABLE reservas (
     data_expiracao DATE NOT NULL,
     usuario INT NOT NULL
 )
-INSERT INTO usuarios (_id, nome, senha, data_nascimento, cpf, endereco, email, telefone, qtd_emprestismos, permissao) VALUES (1,'admin', 'admin', 01/01/2001, '12345678900', 'rua random', '123@gmail.com', '912345679', 10, 'admin');
-INSERT INTO usuarios (_id, nome, senha, data_nascimento, cpf, endereco, email, telefone, qtd_emprestismos, permissao) VALUES (2,'comum', 'comum', 01/01/2001, '12345678900', 'rua random', '123@gmail.com', '912345679', 10, 'comum');
+INSERT INTO usuarios (_id, nome, senha, data_nascimento, cpf, endereco, email, telefone, qtd_emprestismos, permissao) VALUES (1,'admin_u', 'admin1', 01/01/2001, '12345678900', 'rua random', '123@gmail.com', '912345679', 10, 'admin');
+INSERT INTO usuarios (_id, nome, senha, data_nascimento, cpf, endereco, email, telefone, qtd_emprestismos, permissao) VALUES (2,'comum_u', 'comum1', 01/01/2001, '12345678900', 'rua random', '123@gmail.com', '912345679', 10, 'comum');
