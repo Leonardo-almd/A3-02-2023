@@ -40,9 +40,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 | Login  | Cadastro de Usuário | Lista de Livros | 
 |---|---|---|
-| ![Login]() | ![Cadastro de Usuário]() | ![Lista de Livros]() | 
+| ![Login](https://raw.githubusercontent.com/Leonardo-almd/A3-02-2023/main/src/main/assets/login.png) | ![Cadastro de Usuário](https://raw.githubusercontent.com/Leonardo-almd/A3-02-2023/main/src/main/assets/cadastro_usuario.png) | ![Lista de Livros](https://raw.githubusercontent.com/Leonardo-almd/A3-02-2023/main/src/main/assets/lista.png) | 
 
 | Cadastro de Livro  | Cadastro de Avaliação |  
 |---|---|
-| ![Cadastro de Livro]() | ![Cadastro de Avaliação]() |  
+| ![Cadastro de Livro](https://raw.githubusercontent.com/Leonardo-almd/A3-02-2023/main/src/main/assets/cadastro_livro.png) | ![Cadastro de Avaliação](https://raw.githubusercontent.com/Leonardo-almd/A3-02-2023/main/src/main/assets/cadastro_avaliação.png) |  
 
