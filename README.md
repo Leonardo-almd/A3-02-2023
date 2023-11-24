@@ -8,7 +8,8 @@ Biblioteca Digital<br/><br/>
   <a href="#Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
    <a href="#Projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#Imagens">Imagens</a>
+  <a href="#Imagens">Imagens</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Licença">Licença</a>
 </p>
 
 <a id="Tecnologias"></a>
@@ -26,7 +27,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
   
 <a id="Instalação"></a>
-## 🥷 Instalação
+## 📖 Instalação
 
 1. Faça o dowload e extração do projeto;
 2. Navegue até a pasta do projeto e pesquise pelo arquivo "ConexaoMySQL.java" (A3-02-2023\src\main\java\com\example\ConexaoMySQL.java);
@@ -40,9 +41,15 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 | Login  | Cadastro de Usuário | Lista de Livros | 
 |---|---|---|
-| ![Login]() | ![Cadastro de Usuário]() | ![Lista de Livros]() | 
+| ![Login](https://raw.githubusercontent.com/Leonardo-almd/A3-02-2023/main/src/main/assets/login.png) | ![Cadastro de Usuário](https://raw.githubusercontent.com/Leonardo-almd/A3-02-2023/main/src/main/assets/cadastro_usuario.png) | ![Lista de Livros](https://raw.githubusercontent.com/Leonardo-almd/A3-02-2023/main/src/main/assets/lista.png) | 
 
 | Cadastro de Livro  | Cadastro de Avaliação |  
 |---|---|
-| ![Cadastro de Livro]() | ![Cadastro de Avaliação]() |  
+| ![Cadastro de Livro](https://raw.githubusercontent.com/Leonardo-almd/A3-02-2023/main/src/main/assets/cadastro_livro.png) | ![Cadastro de Avaliação](https://raw.githubusercontent.com/Leonardo-almd/A3-02-2023/main/src/main/assets/cadastro_avaliação.png) | 
+
+<a id="Licença"></a>
+## 📝 Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/Leonardo-almd/A3-02-2023/blob/main/LICENSE) para mais detalhes.
+
 
