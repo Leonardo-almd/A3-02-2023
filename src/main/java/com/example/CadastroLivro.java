@@ -35,11 +35,9 @@ public class CadastroLivro extends JFrame {
         txtTitulo = new JTextField(20);
         txtAutor = new JTextField(20);
 
-        // Opções de tipos de livro
         String[] tiposLivro = { "Romance", "Técnico", "Ficção" };
         cmbTipo = new JComboBox<>(tiposLivro);
 
-        // Opções de nota de 0 a 10
         Integer[] notas = new Integer[11];
         for (int i = 0; i <= 10; i++) {
             notas[i] = i;
@@ -60,7 +58,7 @@ public class CadastroLivro extends JFrame {
         panel.add(cmbTipo);
         panel.add(new JLabel("Nota:"));
         panel.add(cmbNota);
-        panel.add(new JLabel()); // Espaço vazio
+        panel.add(new JLabel());
 
         panel.add(btnCadastrarLivro);
 

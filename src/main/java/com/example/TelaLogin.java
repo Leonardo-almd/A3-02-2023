@@ -5,6 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -15,37 +16,32 @@ public class TelaLogin extends JFrame {
     private JPasswordField campoSenha;
 
     public TelaLogin() {
-        // Configurações da janela
         setTitle("Biblioteca Digital");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(400, 600);
         setLocationRelativeTo(null);
         setResizable(false);
 
-        // Painel principal com layout BoxLayout
         JPanel painelPrincipal = new JPanel();
         painelPrincipal.setLayout(new BoxLayout(painelPrincipal, BoxLayout.Y_AXIS));
         painelPrincipal.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
-        // Adiciona o logo
-        ImageIcon logoIcon = new ImageIcon("./src/main/assets/c_1.png");
+        String caminhoRelativo = "A3-02-2023\\src\\main\\assets\\c_1.png";
+        String caminhoCompleto = Paths.get(System.getProperty("user.dir"), caminhoRelativo).toString();
+        ImageIcon logoIcon = new ImageIcon(caminhoCompleto);
         JLabel labelLogo = new JLabel(logoIcon);
         labelLogo.setAlignmentX(Component.CENTER_ALIGNMENT);
         painelPrincipal.add(labelLogo);
 
-        // Adiciona espaço em branco
         painelPrincipal.add(Box.createRigidArea(new Dimension(0, 20)));
 
-        // Adiciona os campos de usuário e senha
         campoUsuario = new JTextField(20);
         campoSenha = new JPasswordField(20);
         adicionarCampoComLabel("Usuário:", campoUsuario, painelPrincipal);
         adicionarCampoComLabel("Senha:", campoSenha, painelPrincipal);
 
-        // Adiciona espaço em branco
         painelPrincipal.add(Box.createRigidArea(new Dimension(0, 10)));
 
-        // Adiciona o botão de login
         JButton btnLogin = new JButton("Login");
         btnLogin.setAlignmentX(Component.CENTER_ALIGNMENT);
         btnLogin.addActionListener(new ActionListener() {
@@ -56,10 +52,8 @@ public class TelaLogin extends JFrame {
         });
         painelPrincipal.add(btnLogin);
 
-        // Adiciona o painel principal à janela
         add(painelPrincipal);
 
-        // Define a cor de fundo
         painelPrincipal.setBackground(new Color(240, 240, 240));
     }
 
@@ -80,7 +74,6 @@ public class TelaLogin extends JFrame {
         String senha = new String(campoSenha.getPassword());
 
         try (Connection connection = ConexaoMySQL.obterConexao()) {
-            // Consulta SQL para verificar as credenciais
             String sql = "SELECT * FROM usuarios WHERE nomeUsuario = ? AND senha = ?";
             try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
                 preparedStatement.setString(1, usuario);
@@ -88,7 +81,6 @@ public class TelaLogin extends JFrame {
 
                 try (ResultSet resultSet = preparedStatement.executeQuery()) {
                     if (resultSet.next()) {
-                        // Credenciais válidas
                         UsuarioLogado.setNome(resultSet.getString("nome"));
                         UsuarioLogado.setAdmin(resultSet.getBoolean("admin"));                      
                         UsuarioLogado.setId(resultSet.getInt("id"));
@@ -98,7 +90,6 @@ public class TelaLogin extends JFrame {
                         JOptionPane.showMessageDialog(null, "Login bem-sucedido!");
                         abrirTelaMenu();
                     } else {
-                        // Credenciais inválidas
                         JOptionPane.showMessageDialog(null, "Usuário ou senha inválidos.");
                     }
                 }
