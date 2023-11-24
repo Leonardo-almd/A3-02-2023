@@ -12,8 +12,8 @@ public class CriarDados {
     public static void main(String[] args) {
         try (Connection conexao = ConexaoMySQL.obterConexao();
                 Statement statement = conexao.createStatement()) {
-
-            String caminhoRelativo = "A3-02-2023/src/main/java/com/example/migration/criacao_de_dados.sql";
+                
+            String caminhoRelativo = "src/main/java/com/example/migration/criacao_de_dados.sql";
             String caminhoCompleto = Paths.get(System.getProperty("user.dir"), caminhoRelativo).toString();
 
             String scriptSQL = lerScriptSQL(caminhoCompleto);

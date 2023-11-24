@@ -25,8 +25,8 @@ public class TelaLogin extends JFrame {
         JPanel painelPrincipal = new JPanel();
         painelPrincipal.setLayout(new BoxLayout(painelPrincipal, BoxLayout.Y_AXIS));
         painelPrincipal.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
-
-        String caminhoRelativo = "A3-02-2023\\src\\main\\assets\\c_1.png";
+        
+        String caminhoRelativo = "src/main/assets/c_1.png";
         String caminhoCompleto = Paths.get(System.getProperty("user.dir"), caminhoRelativo).toString();
         ImageIcon logoIcon = new ImageIcon(caminhoCompleto);
         JLabel labelLogo = new JLabel(logoIcon);
