@@ -26,7 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
   
 <a id="Instalação"></a>
-## 🥷 Instalação
+## 📖 Instalação
 
 1. Faça o dowload e extração do projeto;
 2. Navegue até a pasta do projeto e pesquise pelo arquivo "ConexaoMySQL.java" (A3-02-2023\src\main\java\com\example\ConexaoMySQL.java);
